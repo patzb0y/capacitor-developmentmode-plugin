@@ -8,8 +8,6 @@ import com.getcapacitor.annotation.CapacitorPlugin;
 
 @CapacitorPlugin(name = "developmentmodeplugin")
 public class developmentmodepluginPlugin extends Plugin {
-
-    private developmentmodeplugin implementation = new developmentmodeplugin();
     @PluginMethod
     public void isDeveloperModeEnabled(PluginCall call) {
         Context context = getContext();
