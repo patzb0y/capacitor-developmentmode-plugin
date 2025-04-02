@@ -5,7 +5,8 @@ import com.getcapacitor.Plugin;
 import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
 import com.getcapacitor.annotation.CapacitorPlugin;
-
+import android.content.Context;
+import android.provider.Settings;
 @CapacitorPlugin(name = "developmentmodeplugin")
 public class developmentmodepluginPlugin extends Plugin {
     @PluginMethod
