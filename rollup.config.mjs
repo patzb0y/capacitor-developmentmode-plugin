@@ -1,5 +1,5 @@
 export default {
-  input: 'dist/esm/index.js',
+  input: 'src/index.ts',  // Point to the source file, not the built file
   output: [
     {
       file: 'dist/plugin.js',
@@ -14,6 +14,12 @@ export default {
     {
       file: 'dist/plugin.cjs.js',
       format: 'cjs',
+      sourcemap: true,
+      inlineDynamicImports: true,
+    },
+    {
+      file: 'dist/esm/index.js',  // Add the ESM output here
+      format: 'esm',
       sourcemap: true,
       inlineDynamicImports: true,
     },
