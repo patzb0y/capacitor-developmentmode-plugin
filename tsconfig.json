@@ -16,5 +16,6 @@
     "strict": true,
     "target": "es2017"
   },
-  "files": ["src/index.ts"]
+  "include": ["src/**/*"],  // Include all TypeScript files in the src directory
+  "exclude": ["node_modules"]  // Exclude node_modules from compilation
 }
