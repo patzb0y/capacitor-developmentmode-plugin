@@ -10,13 +10,16 @@ import com.getcapacitor.annotation.CapacitorPlugin;
 public class developmentmodepluginPlugin extends Plugin {
 
     private developmentmodeplugin implementation = new developmentmodeplugin();
-
     @PluginMethod
-    public void echo(PluginCall call) {
-        String value = call.getString("value");
+    public void isDeveloperModeEnabled(PluginCall call) {
+        Context context = getContext();
+        int isDevMode = Settings.Global.getInt(
+            context.getContentResolver(),
+            Settings.Global.DEVELOPMENT_SETTINGS_ENABLED, 0
+        );
 
-        JSObject ret = new JSObject();
-        ret.put("value", implementation.echo(value));
-        call.resolve(ret);
+        JSObject result = new JSObject();
+        result.put("developerMode", isDevMode == 1);
+        call.resolve(result);
     }
 }
