@@ -1,3 +1,4 @@
+import typescript from 'rollup-plugin-typescript2'; 
 export default {
   input: 'src/index.ts',  // Point to the source file, not the built file
   output: [
@@ -24,5 +25,14 @@ export default {
       inlineDynamicImports: true,
     },
   ],
-  external: ['@capacitor/core'],
+  external: ['@capacitor/core',/\.css$/],
+  plugins: [
+    typescript({
+      tsconfig: './tsconfig.json',  // Point to your tsconfig.json file
+      declaration: true,  // Generate declaration files (.d.ts)
+      declarationDir: './dist',  // Output directory for .d.ts files
+      exclude: ['node_modules/**'],  // Exclude node_modules from TypeScript processing
+      useTsconfigDeclarationDir: true, // Use the directory specified in tsconfig.json for declarations
+    }),
+  ],
 };

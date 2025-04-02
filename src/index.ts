@@ -6,5 +6,6 @@ const developmentmodeplugin = registerPlugin<developmentmodepluginPlugin>('devel
   web: () => import('./web').then((m) => new m.developmentmodepluginWeb()),
 });
 
+
 export * from './definitions';
 export { developmentmodeplugin };
