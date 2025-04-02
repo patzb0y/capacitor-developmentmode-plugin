@@ -14,6 +14,7 @@ npx cap sync
 <docgen-index>
 
 * [`echo(...)`](#echo)
+* [`isDeveloperModeEnabled()`](#isdevelopermodeenabled)
 
 </docgen-index>
 
@@ -31,6 +32,17 @@ echo(options: { value: string; }) => Promise<{ value: string; }>
 | **`options`** | <code>{ value: string; }</code> |
 
 **Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+
+--------------------
+
+
+### isDeveloperModeEnabled()
+
+```typescript
+isDeveloperModeEnabled() => Promise<{ developerMode: boolean; }>
+```
+
+**Returns:** <code>Promise&lt;{ developerMode: boolean; }&gt;</code>
 
 --------------------
 
