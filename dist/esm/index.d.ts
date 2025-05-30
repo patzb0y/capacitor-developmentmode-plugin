@@ -1,4 +1,4 @@
-import type { developmentmodepluginPlugin } from './definitions';
-declare const developmentmodeplugin: developmentmodepluginPlugin;
+import type { DevelopmentModePlugin } from './definitions';
+declare const developmentmodeplugin: DevelopmentModePlugin;
 export * from './definitions';
 export { developmentmodeplugin };

@@ -1,6 +1,6 @@
 import { WebPlugin } from '@capacitor/core';
-import type { developmentmodepluginPlugin } from './definitions';
-export declare class developmentmodepluginWeb extends WebPlugin implements developmentmodepluginPlugin {
+import type { DevelopmentModePlugin } from './definitions';
+export declare class DevelopmentModePluginWeb extends WebPlugin implements DevelopmentModePlugin {
     isDeveloperModeEnabled(): Promise<{
         developerMode: boolean;
     }>;

@@ -1,4 +1,4 @@
-export interface developmentmodepluginPlugin {
+export interface DevelopmentModePlugin {
     echo(options: {
         value: string;
     }): Promise<{
