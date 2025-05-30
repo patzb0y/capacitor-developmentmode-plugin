@@ -1,7 +1,7 @@
 {
   "name": "capacitor-developmentmode-plugin",
   "version": "0.0.1",
-  "description": "Disable app if android phone is in development mode",
+  "description": "Disable app if android phone or ios phone is in development mode ",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
