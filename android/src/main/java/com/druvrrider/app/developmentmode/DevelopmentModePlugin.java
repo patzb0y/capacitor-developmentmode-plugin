@@ -7,8 +7,8 @@ import com.getcapacitor.PluginMethod;
 import com.getcapacitor.annotation.CapacitorPlugin;
 import android.content.Context;
 import android.provider.Settings;
-@CapacitorPlugin(name = "developmentmodeplugin")
-public class developmentmodepluginPlugin extends Plugin {
+@CapacitorPlugin(name = "DevelopmentModePlugin")
+public class DevelopmentModePlugin extends Plugin {
     @PluginMethod
     public void isDeveloperModeEnabled(PluginCall call) {
         Context context = getContext();
