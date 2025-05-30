@@ -1,10 +1,10 @@
 import { registerPlugin, WebPlugin } from '@capacitor/core';
 
-const developmentmodeplugin = registerPlugin('DevelopmentModePlugin', {
-    web: () => Promise.resolve().then(function () { return web; }).then((m) => new m.DevelopmentModePluginWeb()),
+const developmentmodeplugin = registerPlugin('developmentmodeplugin', {
+    web: () => Promise.resolve().then(function () { return web; }).then((m) => new m.developmentmodepluginWeb()),
 });
 
-class DevelopmentModePluginWeb extends WebPlugin {
+class developmentmodepluginWeb extends WebPlugin {
     async isDeveloperModeEnabled() {
         // Web doesn't have access to Android's settings, so we mock the behavior
         return {

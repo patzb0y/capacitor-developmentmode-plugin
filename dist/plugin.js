@@ -1,11 +1,11 @@
 var capacitordevelopmentmodeplugin = (function (exports, core) {
   'use strict';
 
-  const developmentmodeplugin = core.registerPlugin('DevelopmentModePlugin', {
-      web: () => Promise.resolve().then(function () { return web; }).then((m) => new m.DevelopmentModePluginWeb()),
+  const developmentmodeplugin = core.registerPlugin('developmentmodeplugin', {
+      web: () => Promise.resolve().then(function () { return web; }).then((m) => new m.developmentmodepluginWeb()),
   });
 
-  class DevelopmentModePluginWeb extends core.WebPlugin {
+  class developmentmodepluginWeb extends core.WebPlugin {
       async isDeveloperModeEnabled() {
           // Web doesn't have access to Android's settings, so we mock the behavior
           return {

@@ -1,5 +1,5 @@
 import XCTest
-@testable import developmentmodepluginPlugin
+@testable import DevelopmentModePlugin
 
 class developmentmodepluginTests: XCTestCase {
     func testEcho() {
